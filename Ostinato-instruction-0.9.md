@@ -31,14 +31,14 @@ For Protocol Buffer 2.3+, clone and build from git repo.
 Build Steps
 ===========
 
-1. Check out the source code version 0.9
+    1. Check out the source code version 0.9
 
 
     git clone https://github.com/pstavirs/ostinato.git
     cd ostinato
     git checkout tags/v0.9
 
-2. Build the source code
+    2. Build the source code
 
 
     qmake
@@ -50,5 +50,5 @@ Build Steps
 References
 ==========
 
-#. https://devguide.ostinato.org/BuildingFromSource.html
-#. https://github.com/protocolbuffers/protobuf/tree/v2.6.1
+    #. https://devguide.ostinato.org/BuildingFromSource.html
+    #. https://github.com/protocolbuffers/protobuf/tree/v2.6.1
