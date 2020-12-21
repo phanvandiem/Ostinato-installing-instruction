@@ -22,6 +22,8 @@ For Protocol Buffer 2.3+, clone and build from git repo.
     curl https://src.fedoraproject.org/repo/pkgs/gtest/gtest-1.5.0.tar.bz2/8b2c3c3f26cb53e64a3109d03a97200a/gtest-1.5.0.tar.bz2 | tar jx
     mv gtest-1.5.0 gtest
     ./autogen.sh
+    if occur error: ./autogen.sh: 38: ./autogen.sh: aclocal: not found
+    then install: apt-get install autotools-dev and apt-get install automake
     if occur error: possibly undefined macro: AC_PROG_LIBTOOL then use command: sudo apt-get install libtool
     ./configure
     make
@@ -46,6 +48,18 @@ Build Steps
     if occur protoc: error while loading shared libraries: libprotobuf.so.9: cannot open shared object file: No such file or directory then use command
     export LD_LIBRARY_PATH=/usr/local/lib
     sudo make install
+    
+Excuse:
+==========
+
+    ostinato
+    If occurs error:
+    pi@raspberrypi:~ $ ostinato
+    ostinato: error while loading shared libraries: libprotobuf.so.9: cannot open shared object file: No such file or directory
+    then
+    pi@raspberrypi:~ $ export LD_LIBRARY_PATH=/usr/local/lib
+    =====> successful
+
 
 References
 ==========
